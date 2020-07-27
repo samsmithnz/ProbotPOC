@@ -1,5 +1,94 @@
 # ProbotPOC
+<style>
+body {
+    background: #fff;
+}
 
+h4 {
+    margin: 0 0 20px 0;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid #999;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: #333;
+}
+
+.chartContainer {
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: #fff;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+    float: left;
+}
+
+/* Vertical */
+
+.vertical .progress-bar {
+    float: left;
+    height: 100px;
+    width: 18px;
+    margin-right: 2px;
+    /*border: 1px solid darkgray;*/
+}
+
+.vertical .progress-track {
+    position: relative;
+    width: 18px;
+    height: 100%;
+    background: #ebebeb;
+}
+
+.vertical .progress-fill {
+    position: relative;
+    /*background: #107c10;*/
+    height: 50%;
+    width: 18px;
+    color: #fff;
+    text-align: center;
+    font-family: "Lato","Verdana",sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: transparent;
+    cursor: pointer;
+}
+
+.completed {
+    background: #107c10; /*Green*/
+}
+
+.partiallySuccessful {
+    background: #fa9d2d; /*Orange*/
+}
+
+.failed {
+    background: #cd4a45; /*Red*/
+}
+
+.inProgress {
+    background: #0078d4; /*Blue*/
+}
+
+.rounded .progress-track,
+.rounded .progress-fill {
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+    border-radius: 3px;
+}
+
+.metricSpan {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+
+a:visited, a:hover, a:focus {
+    text-decoration: none;
+}
+</style>
 
 
 <div class="chartContainer vertical flat">
